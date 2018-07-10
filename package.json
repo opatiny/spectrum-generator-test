@@ -1,0 +1,39 @@
+{
+  "name": "spectrum-generator-test",
+  "version": "0.0.1",
+  "description": "Trying out different things to makde spectrum-generator better",
+  "main": "./src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src test",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "run-s testonly eslint",
+    "testonly": "jest",
+    "build": "cheminfo build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cheminfo-js/spectrum-generator-test.git"
+  },
+  "keywords": [],
+  "author": "Océane Patiny <oceane@patiny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo-js/spectrum-generator-test/issues"
+  },
+  "homepage": "https://github.com/cheminfo-js/spectrum-generator-test#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "cheminfo-tools": "^1.20.2",
+    "eslint": "^4.19.1",
+    "eslint-config-cheminfo": "^1.17.2",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "jest": "^22.4.3",
+    "npm-run-all": "^4.1.2"
+  }
+}
