@@ -11,12 +11,10 @@ addNoise(data, 0.1);
 debug(data);
 
 /**
-    * @fuction SpectrumGenerator
-    * @constructor
-    * @param {object} [data] - Your spectrum data in the format {x:[x1, x2, ...], y:[y1, y2, ...]}
-    * @param {number} [scale = 1] - The factor that determines the noise's amplitude, default is 1/100s of the spectrum max value
-    */
-
+  * Add noise to the spectrum
+  * @param {object} [data] - Your spectrum data in the format {x:[x1, x2, ...], y:[y1, y2, ...]}
+  * @param {number} [scale = 1] - The factor that determines the noise's amplitude, default is 1/100s of the spectrum max value
+  */
 function addNoise(data, scale = 1) {
   var factor = scale * Math.max(...data.y) / 100;
   var xs = data.x;
